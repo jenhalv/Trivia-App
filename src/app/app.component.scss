@@ -1,0 +1,33 @@
+// background-color: #a00037;
+// color: #1bd893;
+
+.app-container {
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header,
+  footer {
+    display: flex;
+    justify-content: center;
+    background: #a00037;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 2rem;
+    font-family: 'Dela Gothic One', cursive;
+    margin: 15px;
+    letter-spacing: 3px;
+  }
+  main {
+    flex-grow: 1;
+  }
+
+  footer {
+    padding: 0.75rem 0;
+    color: white;
+  }
