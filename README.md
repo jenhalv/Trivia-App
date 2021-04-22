@@ -1,4 +1,4 @@
-I created this Angular website in a four-part ngGirls conference series. 
+I created this Angular app in a four-part ngGirls conference series. 
 
 Here is the site (hosted by Firebase):  https://paulspecans.com/
 
