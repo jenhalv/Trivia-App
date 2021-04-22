@@ -1,6 +1,6 @@
 I created this Angular app in a four-part ngGirls conference series. 
 
-Here is the site (hosted by GitHub):  [https://jenhalv.github.io/Trivia-App/](Jen's Trivia App)
+Here is the site (hosted by GitHub):  [Jen's Trivia App](https://jenhalv.github.io/Trivia-App/)
 
 👋 Hi, I’m @jenhalv -- Jennifer Halvorson<br>
 👀 I’m interested in ... pecan farming, reading, and CODING!<br>
