@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d docs"
+    "deploy": "gh-pages -d src"
   },
   "private": true,
   "dependencies": {
@@ -57,12 +57,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jenhalv/trivia.git"
+    "url": "git+https://github.com/jenhalv/trivia-app.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jenhalv/trivia/issues"
+    "url": "https://github.com/jenhalv/trivia-app/issues"
   }
 }
