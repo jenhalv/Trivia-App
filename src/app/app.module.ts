@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TriviaComponent } from './trivia/trivia.component';
 import { Route, RouterModule } from '@angular/router';
 import { AboutComponent } from './about/about.component';
+import { TriviaQuestionComponent } from './trivia-question/trivia-question.component';
 
 const routes: Route[] = [
   {
@@ -27,7 +28,8 @@ const routes: Route[] = [
   declarations: [
     AppComponent,
     TriviaComponent,
-    AboutComponent
+    AboutComponent,
+    TriviaQuestionComponent
   ],
   imports: [
     BrowserModule,

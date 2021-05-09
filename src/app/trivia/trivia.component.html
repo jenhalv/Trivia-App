@@ -1,7 +1,23 @@
 <section>
     <h1>TRIVIA</h1>
+    Questions {{questions.length}}
     <img src="assets/Jen-trivia.png">
 </section>
+
+    <app-trivia-question
+      *ngFor="let item of questions"
+      [question]="item"
+      (answeredEvent)="onQuestionAnswered($event)">
+    </app-trivia-question>
+
+    <section class="results" *ngIf="true">
+      <p>
+        You answered {{correctAnswers}} out of {{questions.length}} questions correctly.
+      </p>
+      <p class="score">Your score is {{correctAnswers/questions.length | percent}}</p>
+      <p>Grab a cocktail &amp; celebrate!</p>
+    </section>
+
 
 <section>
   <a target="_blank" href="https://kcwomenintech.org/"><img src="https://codingandcocktails.kcwomenintech.org/assets/images/logos/logo.png" style="width: 120px;"/></a>
