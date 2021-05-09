@@ -1,4 +1,9 @@
-p {
+div {
+  text-align: center;
+  margin: auto;
+}
+
+  p {
   color: #484e78;
   text-align: left;
 }
@@ -13,6 +18,7 @@ img {
   text-align: center;
   font-size: 1.5rem;
   color: #484e78;
+  display: block;
 }
 
 .score {

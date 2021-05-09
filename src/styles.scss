@@ -25,14 +25,23 @@ $trivia-theme: mat-light-theme((
 @include angular-material-theme($trivia-theme);
 
 
-html, body { 
+html, body {
   height: 100%;
+  font-family: 'Dela Gothic One', cursive;
 }
 
-body { 
+body {
   margin: 0;
-  font-family: 'Dela Gothic One', cursive;
   font-size: 16px;
+}
+
+.mat-h3, .mat-subheading-2, .mat-typography h3 {
+  font: 100 16px/28px "Dela Gothic One", cursive;
+  letter-spacing: 1px;
+}
+
+.mat-h2, .mat-title, .mat-typography h2 {
+  font: 500 20px/32px "Dela Gothic One", cursive;
 }
 
 p {
