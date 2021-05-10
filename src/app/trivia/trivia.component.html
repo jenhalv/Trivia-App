@@ -1,5 +1,7 @@
 <app-header></app-header>
 
+<h2>{{questions.length}} Questions</h2>
+
   <app-trivia-question
     *ngFor="let item of questions"
     [question]="item"
