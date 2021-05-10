@@ -8,18 +8,15 @@
     (answeredEvent)="onQuestionAnswered($event)">
   </app-trivia-question>
 
-    <section class="results" *ngIf="true">
+    <div class="section" *ngIf="true">
       <p>
         You answered {{correctAnswers}} out of {{questions.length}} questions correctly.
       </p>
       <p class="score">Your score is {{correctAnswers/questions.length | percent}}</p>
       <p>Grab a cocktail &amp; celebrate!</p>
-    </section>
+    </div>
 
-
-<section>
-  <a target="_blank" href="https://kcwomenintech.org/"><img src="https://codingandcocktails.kcwomenintech.org/assets/images/logos/logo.png" style="width: 120px;"/></a>
-  <p>This Angular app is being built as part of a four-part series sponsored by Kansas City Women in Technology's Coding & Cocktails!  We meet once a month for four months (we've met up twice so far) to learn Angular and create a fun app.</p>
-</section>
+    <hr>
+<app-about-app></app-about-app>
 
 <app-about-me></app-about-me>

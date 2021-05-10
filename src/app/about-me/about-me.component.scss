@@ -1,14 +1,18 @@
+.section {
+  margin: 50px auto -4px;
+  text-align: right;
+}
+
 p {
-  line-height: 20px;
-  margin: auto;
   text-align: left;
 }
 
 a {
   color: black;
 }
-  a:hover {
-  color: #484e78;
+
+a:hover {
+  color: #c3002f;
 }
 
 .fa {
@@ -24,4 +28,10 @@ a {
 img {
   width: 130px;
   margin: auto;
+}
+
+@media only screen and (max-width: 575px) {
+p {
+margin-bottom: -45px;
+}
 }

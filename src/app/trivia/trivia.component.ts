@@ -9,7 +9,6 @@ import { Question } from '../question';
 export class TriviaComponent implements OnInit {
   @Output() public correctAnswers = 0;
 
-
   public questions: Question[] = [{
     text: 'Florence Nightingale became known as \"the Lady With the Lamp\" during which war?',
     answers: [{

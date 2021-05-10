@@ -2,6 +2,8 @@ div {
   display: flex;
   margin: 15px auto 35px;
   max-width: 500px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 img {

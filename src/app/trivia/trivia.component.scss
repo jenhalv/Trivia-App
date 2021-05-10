@@ -1,23 +1,16 @@
+.section {
+  flex-direction: column;
+  margin-top: 50px;
+}
+
 p {
-  text-align: left;
-}
-
-img {
-  width: 210px;
-  float: right;
-}
-
-.results {
-  margin-top: 4rem;
-  text-align: center;
-  font-size: 1.5rem;
-  color: #484e78;
-  display: block;
+  font-size: 25px;
 }
 
 .score {
   margin: 2rem 0;
   font-size: 3rem;
   font-weight: 600;
-  color: #ba99c0;
+  color: #492771;
+  line-height: 45px;
 }
