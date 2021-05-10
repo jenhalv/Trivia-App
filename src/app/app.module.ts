@@ -6,8 +6,10 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TriviaComponent } from './trivia/trivia.component';
 import { Route, RouterModule } from '@angular/router';
-import { AboutComponent } from './about/about.component';
 import { TriviaQuestionComponent } from './trivia-question/trivia-question.component';
+import { AboutAppComponent } from './about-app/about-app.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { HeaderComponent } from './header/header.component';
 
 const routes: Route[] = [
   {
@@ -28,8 +30,10 @@ const routes: Route[] = [
   declarations: [
     AppComponent,
     TriviaComponent,
-    AboutComponent,
-    TriviaQuestionComponent
+    TriviaQuestionComponent,
+    AboutAppComponent,
+    AboutMeComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

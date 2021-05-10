@@ -5,41 +5,14 @@ div {
   flex-direction: column;
 }
 
-header,
 footer {
-  display: flex;
-  background: #492771;
-}
-
-header {
-  justify-content: left;
-}
-
-img {
-  width: 50px;
-  height: 50px;
-  margin: auto 10px;
-}
-
-h1 {
-  font-size: 1.5rem;
-  color: white;
-  margin-bottom: 2rem;
-  margin: 15px;
-  letter-spacing: 3px;
-  text-align: left;
+  background: linear-gradient(to right, #3204fdba, #492771);
+  color: #ffed64;
+  height: 45px;
 }
 
 main {
   flex-grow: 1;
   margin: auto;
   text-align: center;
-}
-
-footer {
-  padding: 0.75rem 0;
-  color: white;
-  font-family: 'Kaushan Script', cursive;
-  font-size: 18px;
-  justify-content: center;
 }

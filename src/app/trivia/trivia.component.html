@@ -1,16 +1,10 @@
-<section>
-  <div>
-    <h1>TRIVIA</h1>
-    <h2>{{questions.length}} Questions</h2>
-  </div>
-    <img src="assets/Jen-trivia.png">
-</section>
+<app-header></app-header>
 
-    <app-trivia-question
-      *ngFor="let item of questions"
-      [question]="item"
-      (answeredEvent)="onQuestionAnswered($event)">
-    </app-trivia-question>
+  <app-trivia-question
+    *ngFor="let item of questions"
+    [question]="item"
+    (answeredEvent)="onQuestionAnswered($event)">
+  </app-trivia-question>
 
     <section class="results" *ngIf="true">
       <p>
@@ -26,4 +20,4 @@
   <p>This Angular app is being built as part of a four-part series sponsored by Kansas City Women in Technology's Coding & Cocktails!  We meet once a month for four months (we've met up twice so far) to learn Angular and create a fun app.</p>
 </section>
 
-<app-about></app-about>
+<app-about-me></app-about-me>
