@@ -5,3 +5,20 @@ img {
 p {
   text-align: right;
 }
+
+.circle {
+  width: 210px;
+  height: 210px;
+  border-radius: 100%;
+  box-shadow: inset 20px -15px 0px 20px  #492771;
+  position: absolute;
+}
+
+.label {
+  font-family: "Roboto Mono", monospace;
+  font-size: 100px;
+  letter-spacing: -20px;
+  text-align: left;
+  margin: 100px auto 100px 50px;
+  line-height: 65px;
+}
