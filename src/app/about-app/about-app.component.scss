@@ -1,15 +1,26 @@
+.section {
+  position: relative;
+    max-width: 1000px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
 img {
   width: 120px;
 }
 
 .circle {
-  // margin: -45px auto 0px 15px;
   width: 210px;
   height: 210px;
   border-radius: 100%;
   box-shadow: inset 20px -15px 0px 20px #492771;
   position: absolute;
+  top: 10%;
   left: 10%;
+  transform: translate(-50%, -50%);
+  opacity: .5;
 }
 
 .label {
@@ -17,11 +28,10 @@ img {
   font-size: 100px;
   letter-spacing: -20px;
   text-align: left;
-  margin: 100px 50px;
-  line-height: 65px;
   position: absolute;
-  position: relative;
-  left: 20px;
+  left: 5%;
+  bottom: 98%;
+  opacity: .5;
 }
 
 ul li:before {
@@ -33,14 +43,11 @@ ul li:before {
 }
 
 ul {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 20px auto;
   text-align: left;
-  float: right;
   list-style: none;
   padding: 20px 15px;
   font-family: "Raleway", sans-serif;
+  z-index: 1000;
 }
 
 li {
@@ -49,3 +56,25 @@ li {
   font-weight: 600;
 }
 
+@media only screen and (max-width: 1000px) {
+  .circle {
+    left: 12%;
+  }
+
+  }
+
+
+@media only screen and (max-width: 575px) {
+.circle {
+  left: 25%;
+  top: -4%;
+}
+
+.label {
+  top: -9%;
+}
+
+ul {
+  margin: 50px auto;
+}
+}
