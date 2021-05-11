@@ -1,0 +1,22 @@
+<app-header></app-header>
+
+<h2>{{questions.length}} Questions</h2>
+
+  <app-trivia-question
+    *ngFor="let item of questions"
+    [question]="item"
+    (answeredEvent)="onQuestionAnswered($event)">
+  </app-trivia-question>
+
+    <div class="section" *ngIf="true">
+      <p>
+        You answered {{correctAnswers}} out of {{questions.length}} questions correctly.
+      </p>
+      <p class="score">Your score is {{correctAnswers/questions.length | percent}}</p>
+      <p>Grab a cocktail &amp; celebrate!</p>
+    </div>
+
+    <hr>
+<app-about-app></app-about-app>
+
+<app-about-me></app-about-me>

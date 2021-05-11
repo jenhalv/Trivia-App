@@ -1,1 +1,115 @@
-/* You can add global styles to this file, and also import other style files */
+// background-color: #492771;
+// color: #1bd893;
+
+@import '~@angular/material/theming';
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kaushan+Script&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+@include mat-core();
+
+$trivia-primary: mat-palette($mat-indigo);
+$trivia-accent: mat-palette($mat-pink, A200, A100, A400);
+$trivia-warn: mat-palette($mat-red);
+$trivia-theme: mat-light-theme((
+  color: (
+    primary: $trivia-primary,
+    accent: $trivia-accent,
+    warn: $trivia-warn,
+  )
+));
+
+@include angular-material-theme($trivia-theme);
+
+
+html, body {
+  height: 100%;
+  font-family: 'Dela Gothic One', cursive;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+}
+
+.mat-h2, .mat-title, .mat-typography h2 {
+  font: 500 20px/32px "Dela Gothic One", cursive;
+}
+
+.mat-h3, .mat-subheading-2, .mat-typography h3 {
+  font: 100 16px/28px "Dela Gothic One", cursive;
+  letter-spacing: 1px;
+  margin: 20px auto;
+  padding: 5px 10px;
+}
+
+hr {
+  margin: 30px;
+  border: #492771 5px solid;
+ }
+
+p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin: auto;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+p, .mat-body p, .mat-body-1 p, .mat-typography p {
+  margin: auto;
+}
+
+.mat-h1, .mat-headline, .mat-typography h1 {
+  font-family: "Dela Gothic One", cursive;
+  margin: auto;
+  font-size: 45px;
+  padding: 15px;
+}
+
+.section {
+  display: flex;
+  margin: 100px auto;
+  max-width: 700px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+header,
+footer {
+  background: linear-gradient(to right, #3204fdba, #492771);
+  color: #ffed64;
+  height: 45px;
+}
+
+header {
+  display: table;
+}
+
+main {
+  flex-grow: 1;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+
+footer {
+  padding: 1rem;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 18px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 575px) {
+  .section {
+    display: block;
+  }
+}
