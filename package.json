@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "predeploy": "npm run build",
-    "deploy": "ng b --prod --base-href https://jenhalv.github.io/Trivia-App/ && npx ngh --dir=dist/"
+    "deploy": "ng b --prod --base-href https://jenhalv.github.io/Trivia-App/ --output-path docs"
   },
   "private": true,
   "dependencies": {

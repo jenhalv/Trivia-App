@@ -24,6 +24,13 @@ $trivia-theme: mat-light-theme((
 
 @include angular-material-theme($trivia-theme);
 
+a {
+  color: black;
+}
+
+a:hover {
+  color: #c3002f;
+}
 
 html, body {
   height: 100%;
@@ -32,7 +39,41 @@ html, body {
 
 body {
   margin: 0;
-  font-size: 16px;
+  position: relative;
+  width: 100%;
+}
+
+header,
+footer {
+  background: linear-gradient(to right, #3204fdba, #492771);
+  color: #ffed64;
+  height: 45px;
+}
+
+footer {
+  padding: 1rem;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 18px;
+  text-align: center;
+  height: fit-content;
+  z-index: 1000;
+}
+
+.fa {
+  font-size: 20px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.fa:hover {
+  color: #c3002f;
+}
+
+.mat-h1, .mat-headline, .mat-typography h1 {
+  font-family: "Dela Gothic One", cursive;
+  margin: auto;
+  font-size: 45px;
+  padding: 15px;
 }
 
 .mat-h2, .mat-title, .mat-typography h2 {
@@ -40,7 +81,7 @@ body {
 }
 
 .mat-h3, .mat-subheading-2, .mat-typography h3 {
-  font: 100 16px/28px "Dela Gothic One", cursive;
+  font: 100 19px/30px "Dela Gothic One", cursive;
   letter-spacing: 1px;
   margin: 20px auto;
   padding: 5px 10px;
@@ -51,26 +92,27 @@ hr {
   border: #492771 5px solid;
  }
 
+main {
+  flex-grow: 1;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+}
+
 p {
   margin-block-start: 0em;
   margin-block-end: 0em;
   margin: auto;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 23px;
   font-weight: bold;
   padding: 5px 10px;
 }
 
-p, .mat-body p, .mat-body-1 p, .mat-typography p {
+.mat-body p, .mat-body-1 p, .mat-typography p {
   margin: auto;
-}
-
-.mat-h1, .mat-headline, .mat-typography h1 {
-  font-family: "Dela Gothic One", cursive;
-  margin: auto;
-  font-size: 45px;
-  padding: 15px;
 }
 
 .section {
@@ -81,31 +123,6 @@ p, .mat-body p, .mat-body-1 p, .mat-typography p {
   align-items: center;
   font-size: 18px;
   line-height: 20px;
-}
-
-header,
-footer {
-  background: linear-gradient(to right, #3204fdba, #492771);
-  color: #ffed64;
-  height: 45px;
-}
-
-header {
-  display: table;
-}
-
-main {
-  flex-grow: 1;
-  margin: auto;
-  text-align: center;
-  width: 100%;
-}
-
-footer {
-  padding: 1rem;
-  font-family: 'Kaushan Script', cursive;
-  font-size: 18px;
-  text-align: center;
 }
 
 @media only screen and (max-width: 575px) {

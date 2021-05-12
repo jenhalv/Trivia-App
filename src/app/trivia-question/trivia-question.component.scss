@@ -1,5 +1,9 @@
 div {
-  margin: auto;
+  margin: 45px auto 70px;
+}
+
+h3 {
+  margin: 40px auto 10px;
 }
 
 ul {
@@ -34,15 +38,20 @@ button {
   background: white;
   color: #492771;
   border: 2px solid #492771;
-  font-weight: 100;
   letter-spacing: 1px;
-  font-family: 'Dela Gothic One', cursive;
+  font-size: 19px;
+  font-family: "Raleway", sans-serif;
 }
 
 .answer:hover {
   color: white;
   background: #ffc744;
   border: 2px solid #ffc744;
-  margin: auto;
   box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 1px rgba(0, 0, 0, 0.14), 0px 2px 6px 1px rgba(0, 0, 0, 0.12);
+}
+
+@media only screen and (max-width: 275px) {
+  button {
+    width: 200px;;
+  }
 }
