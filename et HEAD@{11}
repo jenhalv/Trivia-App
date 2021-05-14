@@ -1,0 +1,29 @@
+[33m22334e6[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{0}: commit: ?
+[33m28de42a[m HEAD@{1}: undo: commit: removed asset folder
+[33m4909a78[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{2}: commit: removed asset folder
+[33m28de42a[m HEAD@{3}: commit: why so many files
+[33m926a1b8[m HEAD@{4}: commit: remove test
+[33m13a1c54[m HEAD@{5}: commit (merge): Merge remote-tracking branch 'origin/main' into main
+[33m414e75e[m HEAD@{6}: commit: ???
+[33me1b1bc8[m[33m ([m[1;31morigin/gh-pages[m[33m)[m HEAD@{7}: checkout: moving from master to main
+[33m95f2bc8[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{8}: checkout: moving from main to master
+[33me1b1bc8[m[33m ([m[1;31morigin/gh-pages[m[33m)[m HEAD@{9}: reset: moving to e1b1bc817a4788d33d916a25ee53bf211d92e209 [00ee7444360a5f072a546ae8ca6146d91ae5f1b0]
+[33m18a5f67[m HEAD@{10}: undo: commit: Revert "pages"
+[33m020c674[m HEAD@{11}: commit: Revert "pages"
+[33m18a5f67[m HEAD@{12}: reset: moving to 18a5f67544b8bb759ceb31986572e40ba07b400b [049591487bc76416f19c5a49b875b8fff22871c0]
+[33m57ca101[m HEAD@{13}: undo: commit: source code button fix
+[33m18a5f67[m HEAD@{14}: undo: commit: TEST
+[33m12b0db9[m HEAD@{15}: undo: commit: pages
+[33m95f2bc8[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{16}: commit: pages
+[33m12b0db9[m HEAD@{17}: commit: TEST
+[33m18a5f67[m HEAD@{18}: commit: source code button fix
+[33m57ca101[m HEAD@{19}: checkout: moving from master to main
+[33mc99b085[m HEAD@{20}: commit: github pages
+[33m1fc0b6a[m HEAD@{21}: commit (merge): Merge remote-tracking branch 'origin/main'
+[33m9cc5b42[m HEAD@{22}: commit (merge): Merge branch 'main'
+[33m7fcbc18[m HEAD@{23}: commit: width of mobile view fix
+[33mba35dbf[m HEAD@{24}: commit: github publish
+[33m398d669[m HEAD@{25}: commit: Github Button
+[33m1264332[m HEAD@{26}: commit: Birdwatching photo addition
+[33ma242ac3[m HEAD@{27}: commit (merge): Merge remote-tracking branch 'origin/main'
+[33m2cd9fbc[m HEAD@{28}: commit: github push

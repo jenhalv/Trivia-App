@@ -11,14 +11,13 @@
   padding: 10px;
   display: flex;
   margin: 10px auto 100px;
-  justify-content: center;
-  align-content: center;
   color: white;
   transition: all 1s ease;
   text-decoration: none;
   border-radius: 5px;
   box-shadow: 0px 4px 12px -2px rgb(0 0 0 / 10%), 5px 5px 14px 1px rgb(0 0 0 / 14%), 0px 2px 6px 1px rgb(0 0 0 / 12%);
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .box:hover {
@@ -41,6 +40,7 @@
   width: 80px;
   filter: invert(100%);
   transition: all 1s ease;
+  padding-left: 15px;
 }
 
 p {
@@ -49,7 +49,7 @@ p {
   margin-right: -10px;
 }
 
-img {
+.bitmoji {
   width: 200px;
   z-index: -5;
 }
@@ -64,5 +64,11 @@ img {
 @media only screen and (max-width: 415px) {
   p {
     margin-bottom: -30px;
+  }
+}
+
+@media only screen and (max-width: 335px) {
+  .box {
+    display: block;
   }
 }
