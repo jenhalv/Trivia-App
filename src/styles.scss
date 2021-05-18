@@ -35,11 +35,11 @@ a:hover {
 html, body {
   height: 100%;
   font-family: 'Dela Gothic One', cursive;
+  border: 0;
 }
 
 body {
   margin: 0;
-  position: relative;
   width: 100%;
 }
 
@@ -73,7 +73,7 @@ footer {
   font-family: "Dela Gothic One", cursive;
   margin: auto;
   font-size: 45px;
-  padding: 15px;
+  padding-bottom: 15px;
 }
 
 .mat-h2, .mat-title, .mat-typography h2 {
