@@ -1,6 +1,6 @@
 <app-header></app-header>
 
-<div *ngIf="questions$ | async as questions">>
+<div *ngIf="questions$ | async as questions">
 
   <section *ngIf="currentQuestionIndex < questions.length else results">
     <h2>Question {{currentQuestionIndex + 1}} of {{questions.length}}</h2>
