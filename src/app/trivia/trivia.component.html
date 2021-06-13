@@ -1,20 +1,27 @@
 <app-header></app-header>
 
-<h2>{{questions.length}} Questions</h2>
+<div *ngIf="questions$ | async as questions">>
 
-  <app-trivia-question
-    *ngFor="let item of questions"
-    [question]="item"
-    (answeredEvent)="onQuestionAnswered($event)">
-  </app-trivia-question>
+  <section *ngIf="currentQuestionIndex < questions.length else results">
+    <h2>Question {{currentQuestionIndex + 1}} of {{questions.length}}</h2>
+    <app-trivia-question
+      *ngFor="let item of questions; let i = index"
+      [question]="item"
+      [shouldDisplay]="i === currentQuestionIndex"
+      (answeredEvent)="onQuestionAnswered($event)">
+    </app-trivia-question>
+  </section>
 
-    <div class="section" *ngIf="true">
+  <ng-template #results>
+    <div class="section">
       <p>
         You answered {{correctAnswers}} out of {{questions.length}} questions correctly.
       </p>
       <p class="score">Your score is {{correctAnswers/questions.length | percent}}</p>
       <p>Grab a cocktail &amp; celebrate!</p>
     </div>
+  </ng-template>
+</div>
 
     <hr>
 <app-about-app></app-about-app>

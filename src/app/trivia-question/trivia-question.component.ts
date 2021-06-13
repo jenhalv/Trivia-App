@@ -8,6 +8,7 @@ import { Question } from '../question';
 })
 export class TriviaQuestionComponent implements OnInit {
   @Input() public question: Question;
+  @Input() public shouldDisplay: boolean;
   @Output() public answeredEvent: EventEmitter<boolean> = new EventEmitter<boolean>();
 
   constructor() { }
